@@ -1,0 +1,37 @@
+.orange {
+    color: #ff9b51;
+  }
+  .bg-orange {
+    background-color: #ff9b51;
+  }
+  .bc-orange {
+    border-color: #ff9b51;
+  }
+  .container {
+    max-width: 1132px;
+    width: 100%;
+    margin: auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .header {
+    background-color: #000000;
+    padding: 20px 0;
+  }
+  .container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-menu__item {
+    margin-right: 50px;
+    color: #c9c9c9;
+    text-decoration: none;
+    text-align: center;
+  }
+  .header-menu__item:hover {
+    color: #ff9b51;
+  }
+  .header-menu__item:last-child {
+    margin-right: 0;
+  }

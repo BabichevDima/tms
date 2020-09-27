@@ -1,0 +1,26 @@
+.footer {
+    background-color: #000000;
+    padding-top: 40px;
+  }
+  .footer-menu__item {
+    text-align: center;
+  }
+  .footer-menu__link {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #cccccc;
+    font-size: 25px;
+  }
+  .footer-menu__link:hover {
+    color: #ff9b51;
+  }
+  .footer-menu__link:last-child {
+    margin-right: 0;
+  }
+  .copiright {
+    text-align: center;
+    font-size: 12px;
+    padding: 15px 0;
+    font-family: "Open Sans";
+    color: rgba(255, 255, 255, 0.502);
+  }
