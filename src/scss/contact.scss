@@ -1,61 +1,85 @@
 .contact {
-    padding: 110px 0 80px 0;
-  }
-  .contact__section-name {
-    padding-bottom: 60px;
-  }
+  padding: 110px 0 80px 0;
+}
+.contact__section-name {
+  padding-bottom: 60px;
+}
+.contact__form-input__hat {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 1100px;
+  height: 160px;
+  margin-bottom: 42px;
+}
+.contact__form-input__wrap {
+  width: 520px;
+}
+
+.message {
+  width: 510px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(189, 189, 189);
+  padding: 10px 0 0 10px;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  resize: none;
+}
+.contact__form-input {
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(189, 189, 189);
+}
+.contact__form-input__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sent__message {
+  padding: 16px 24px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Open Sans";
+  line-height: 1.2;
+  cursor: pointer;
+  background-color: $orange;
+  border-radius: 6px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sent__message:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1140px) {
   .contact__form-input__hat {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 1100px;
-    height: 160px;
-    margin-bottom: 42px;
-  }
-  .contact__form-input__wrap {
-    width: 520px;
-  }
-  
-  .message {
-    width: 510px;
-    font-size: 14px;
-    font-family: "Open Sans";
-    color: rgb(189, 189, 189);
-    padding: 10px 0 0 10px;
-    border: none;
-    border-bottom: 1px solid #d6d6d6;
-    resize: none;
-  }
-  .contact__form-input {
-    border: none;
-    border-bottom: 1px solid #d6d6d6;
-    padding: 10px;
-    font-size: 14px;
-    font-family: "Open Sans";
-    color: rgb(189, 189, 189);
-  }
-  .contact__form-input__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .sent__message {
-    padding: 16px 24px;
-    border: none;
-    color: #fff;
-    font-size: 15px;
-    font-family: "Open Sans";
-    line-height: 1.2;
-    cursor: pointer;
-    background-color: #ff9b51;
-    border-radius: 6px;
-    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
-  }
-  .form {
-    display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
-  .sent__message:hover {
-    opacity: 0.8;
+  .message {
+    display: block;
+    height: 150px;
   }
+}
+
+@media (max-width: 576px) {
+  .contact__form-input__hat {
+    width: 100%;
+  }
+  .contact__form-input__wrap {
+    width: 100%;
+  }
+  .message {
+    width: 100%;
+  }
+}
