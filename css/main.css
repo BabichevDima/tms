@@ -308,7 +308,7 @@
   padding: 0 15px;
   text-align: center;
 }
-.awesom__icon {
+.awesome__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,18 +320,18 @@
   color: #ff9b51;
   margin: 0 auto 30px;
 }
-.awesom__icon:hover {
+.awesome__icon:hover {
   color: black;
   font-size: 39px;
   border-color: black;
 }
-.awesone__text {
+.awesome__text {
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(134, 135, 139);
   line-height: 1.429;
 }
-.awesom__titel {
+.awesome__titel {
   margin-bottom: 30px;
 }
 /* Закончился awesome */
