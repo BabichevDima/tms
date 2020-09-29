@@ -1,37 +1,7 @@
 .awesome {
   padding: 100px 0;
 }
-.section-name {
-  text-align: center;
-}
-.section-name__title {
-  font-size: 36px;
-  font-family: "Open Sans";
-  color: rgb(33, 33, 33);
-  font-weight: normal;
-  line-height: 1.194;
-  text-transform: uppercase;
-  margin-bottom: 28px;
-}
-.section-name__title:after {
-  content: "";
-  display: block;
-  width: 62px;
-  border: 1px solid;
-  margin: 28px auto 0;
-}
-.orange-line:after {
-  border-color: $orange;
-}
-.white-line:after {
-  border-color: #fff;
-}
-.section-name__text {
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(134, 134, 134);
-  line-height: 1.429;
-}
+
 .awesome__section-name {
   margin-bottom: 80px;
 }

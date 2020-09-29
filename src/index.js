@@ -11,3 +11,14 @@ button.addEventListener("click", () => {
 	button.classList.add("active")
 	menu.classList.add("active")
 })
+
+
+const tabs = () => {
+	const tabs = document.getElementById("tabs").children
+	console.log("tab .> tabs", tabs)
+	const list = document.getElementById("list")
+   
+	
+   }
+   
+   tabs()
