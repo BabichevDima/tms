@@ -1,111 +1,39 @@
 .features {
-  padding: 145px 0 115px 0;
-  background-color: #f5f5f5;
-}
-.features__list {
-  position: relative;
-}
-.features__button {
-  display: none;
-}
-.features__button:checked ~ .features__button-fake {
-  background-color: $orange;
-}
-.features__button-fake {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  background-color: #333333;
-  color: #fff;
-  margin-bottom: 1px;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 6px;
-  text-transform: uppercase;
-}
-.features__tab {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 210px;
-  width: 480px;
-  height: 320px;
-}
-.sity {
-  position: absolute;
-  top: 20px;
-  left: 755px;
-  width: 322px;
-}
-.features__button:checked ~ .features__tab {
-  display: block;
-}
-.features__title {
-  margin-bottom: 60px;
-  font-size: 20px;
-  font-family: "Open Sans";
-  font-weight: bold;
-  line-height: 1.2;
-}
-.features__text {
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(134, 135, 139);
-  line-height: 1.429;
-  margin-bottom: 30px;
-}
-.features__downtoad {
-  display: inline-block;
-  border: 2px solid $orange;
-  background-color: $orange;
-  color: #fff;
-  font-size: 15px;
-  font-family: "Open Sans";
-  line-height: 1.2;
-  padding: 13px 30px;
-  text-decoration: none;
-  transition: color 0.4s, background-color 0.4s;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 6px;
-}
-.features__downtoad:hover {
-  opacity: 0.8;
-}
+  padding: 140px 0 110px;
+  border-bottom: 1px solid #000;
 
-@media (max-width: 1140px) {
-  .sity {
-    display: none;
-  }
-  .features__tab {
-    width: unset;
-    left: 150px;
-  }
-}
-
-@media (max-width: 960px) {
-  .features__tab {
-    left: 140px;
-  }
-  .features__list {
+  &__container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
   }
 
-  .features__tab {
+  &__tabs {
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 100px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    background-color: #333333;
+    color: #fff;
+    margin-bottom: 1px;
+
+    &_active {
+      background-color: $orange;
+    }
+  }
+
+  &__item {
     display: none;
-    position: absolute;
-    top: 150px;
-    left: 0;
-    text-align: center;
-  }
-  .features__block {
-    margin-bottom: 50px;
-  }
-  .features {
-    padding: 100px 0;
-    height: 490px;
+    width: 440px;
+
+    &_visible {
+      display: block;
+    }
   }
 }

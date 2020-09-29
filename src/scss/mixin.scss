@@ -1,0 +1,5 @@
+@mixin common-border($btColor, $bbColor) {
+  height: 200px;
+  border-top: 1px solid $btColor;
+  border-bottom: 2px solid $bbColor;
+}
