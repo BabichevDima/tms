@@ -1,18 +1,48 @@
 .features {
   padding: 140px 0 110px;
-  border-bottom: 1px solid #000;
+  background-color: #f5f5f5;
 
+  &__title {
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
   &__container {
     display: flex;
+    background-image: url(../../image/Sity.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
   }
-
+  &__text {
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(134, 135, 139);
+    line-height: 1.429;
+    margin-bottom: 30px;
+  }
+  &__downtoad {
+    padding: 16px 24px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Open Sans";
+    line-height: 1.2;
+    cursor: pointer;
+    background-color: $orange;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  &__downtoad:hover {
+    opacity: 0.8;
+  }
   &__tabs {
     border-radius: 4px;
     overflow: hidden;
     flex-shrink: 0;
     margin-right: 100px;
   }
-
   &__button {
     display: flex;
     justify-content: center;
@@ -22,18 +52,49 @@
     background-color: #333333;
     color: #fff;
     margin-bottom: 1px;
-
+    cursor: pointer;
     &_active {
       background-color: $orange;
     }
   }
-
   &__item {
     display: none;
     width: 440px;
 
     &_visible {
       display: block;
+    }
+  }
+}
+@media (max-width: 1140px) {
+  .features {
+    &__container {
+      background-image: none;
+      flex-direction: column;
+    }
+    &__tabs {
+      margin: auto;
+      display: flex;
+      margin-bottom: 20px;
+    }
+    &__item {
+      text-align: center;
+      margin: auto;
+    }
+    &__item {
+      width: 100%;
+    }
+    &__button {
+      margin-bottom: 0;
+      margin-right: 1px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .features {
+    &__button {
+      width: 90px;
+      height: 90px;
     }
   }
 }
