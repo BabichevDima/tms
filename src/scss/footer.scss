@@ -1,22 +1,24 @@
 .footer {
   background-color: #000000;
   padding-top: 40px;
-}
-.footer-menu__item {
-  text-align: center;
-}
-.footer-menu__link {
-  text-decoration: none;
-  margin-right: 30px;
-  color: #cccccc;
-  font-size: 25px;
-}
-.footer-menu__link:hover {
-  color: $orange;
-  cursor: pointer;
-}
-.footer-menu__link:last-child {
-  margin-right: 0;
+
+  &__item {
+    text-align: center;
+  }
+  &__link {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #cccccc;
+    font-size: 25px;
+  }
+
+  &__link:hover {
+    color: $orange;
+    cursor: pointer;
+  }
+  &__link:last-child {
+    margin-right: 0;
+  }
 }
 .copiright {
   text-align: center;

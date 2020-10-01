@@ -1,36 +1,74 @@
 .price {
   background-color: #f5f5f5;
   padding: 100px 0;
-}
-.price__section-name {
-  margin-bottom: 80px;
-}
-.price__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.price__titel {
-  width: 340px;
-  border-bottom: 1px solid white;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.price__titel:nth-child(1) {
-  font-size: 20px;
-  font-family: "Open Sans";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.2;
-}
-.price__titel:nth-child(2) {
-  font-size: 35px;
-  font-family: "Raleway";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 0.686;
-  padding-bottom: 10px;
+
+  &__section-name {
+    margin-bottom: 80px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__titel {
+    width: 340px;
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &__titel:nth-child(1) {
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  &__titel:nth-child(2) {
+    font-size: 35px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.686;
+    padding-bottom: 10px;
+  }
+  &__titel:nth-child(3) {
+    border: unset;
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgba(255, 255, 255, 0.502);
+    line-height: 1.714;
+  }
+  &__titel:nth-child(n + 4) {
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(134, 135, 139);
+    text-transform: uppercase;
+    line-height: 1.714;
+  }
+  &__titel:nth-child(-n + 3) {
+    background-color: #333333;
+  }
+  &__titel.line {
+    background-color: #ff8b38;
+    height: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: unset;
+  }
+  &__titel.popular {
+    background-color: #ff8b38;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: unset;
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.714;
+  }
 }
 .dolor {
   font-size: 24px;
@@ -44,59 +82,24 @@
   font-weight: bold;
   line-height: 0.686;
 }
-.price__titel:nth-child(3) {
-  border: unset;
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgba(255, 255, 255, 0.502);
-  line-height: 1.714;
-}
-.price__titel:nth-child(n + 4) {
-  border-bottom: 1px solid #f5f5f5;
-  background-color: #ffffff;
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(134, 135, 139);
-  text-transform: uppercase;
-  line-height: 1.714;
-}
-.price__titel:nth-child(-n + 3) {
-  background-color: #333333;
-}
-.price__titel.line {
-  background-color: #ff8b38;
-  height: 5px;
-  padding-top: 0;
-  padding-bottom: 0;
-  border: unset;
-}
-.price__titel.popular {
-  background-color: #ff8b38;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: unset;
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.714;
-}
-
 @media (max-width: 1140px) {
-  .price__list {
-    flex-direction: column;
-    align-items: center;
-  }
-  .prise__item {
-    margin-bottom: 30px;
+  .price {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      margin-bottom: 30px;
+    }
   }
 }
-
 @media (max-width: 576px) {
-  .prise__item {
-    width: 100%;
-  }
-  .price__titel {
-    width: 100%;
+  .prise {
+    &__item {
+      width: 100%;
+    }
+    &__titel {
+      width: 100%;
+    }
   }
 }
