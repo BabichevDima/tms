@@ -19,7 +19,6 @@
     line-height: 1.194;
     text-transform: uppercase;
     margin-bottom: 28px;
-
     &:after {
       content: "";
       display: block;
@@ -29,11 +28,11 @@
       margin-top: 40px;
     }
   }
-}
-.subtitel__design {
-  font-size: 16px;
-  font-family: "Raleway";
-  color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  margin-bottom: 40px;
+  &__subtitel {
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
