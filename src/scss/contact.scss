@@ -1,50 +1,38 @@
 .contact {
   padding: 110px 0 80px 0;
-}
-.contact__section-name {
-  padding-bottom: 60px;
-}
-.contact__form-input__hat {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 1100px;
-  height: 160px;
-  margin-bottom: 42px;
-}
-.contact__form-input__wrap {
-  width: 520px;
-}
 
-.message {
-  width: 510px;
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(189, 189, 189);
-  padding: 10px 0 0 10px;
-  border: none;
-  border-bottom: 1px solid #d6d6d6;
-  resize: none;
-}
-.contact__form-input {
-  border: none;
-  border-bottom: 1px solid #d6d6d6;
-  padding: 10px;
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(189, 189, 189);
-}
-.contact__form-input__wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  &__section-name {
+    padding-bottom: 60px;
+  }
+  &__form-input {
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 10px;
+    font-size: 14px;
+    font-family: $mainFont;
+    color: rgb(189, 189, 189);
+    &__hat {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 1100px;
+      height: 160px;
+      margin-bottom: 42px;
+    }
+    &__wrap {
+      width: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
 }
 .sent__message {
   padding: 16px 24px;
   border: none;
   color: #fff;
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: $mainFont;
   line-height: 1.2;
   cursor: pointer;
   background-color: $orange;
@@ -59,7 +47,16 @@
 .sent__message:hover {
   opacity: 0.8;
 }
-
+.message {
+  width: 510px;
+  font-size: 14px;
+  font-family: $mainFont;
+  color: rgb(189, 189, 189);
+  padding: 10px 0 0 10px;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  resize: none;
+}
 @media (max-width: 1140px) {
   .contact__form-input__hat {
     flex-direction: column;
@@ -73,11 +70,15 @@
 }
 
 @media (max-width: 576px) {
-  .contact__form-input__hat {
-    width: 100%;
-  }
-  .contact__form-input__wrap {
-    width: 100%;
+  .contact {
+    &__form-input {
+      &__hat {
+        width: 100%;
+      }
+      &__wrap {
+        width: 100%;
+      }
+    }
   }
   .message {
     width: 100%;

@@ -5,7 +5,7 @@
   &__title {
     margin-bottom: 60px;
     font-size: 20px;
-    font-family: "Open Sans";
+    font-family: $mainFont;
     color: rgb(0, 0, 0);
     font-weight: bold;
   }
@@ -17,7 +17,7 @@
   }
   &__text {
     font-size: 14px;
-    font-family: "Open Sans";
+    font-family: $mainFont;
     color: rgb(134, 135, 139);
     line-height: 1.429;
     margin-bottom: 30px;
@@ -28,7 +28,7 @@
     border: none;
     color: #fff;
     font-size: 15px;
-    font-family: "Open Sans";
+    font-family: $mainFont;
     line-height: 1.2;
     cursor: pointer;
     background-color: $orange;
