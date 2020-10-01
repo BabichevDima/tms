@@ -16,58 +16,58 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-  &__titel:nth-child(1) {
-    font-size: 20px;
-    font-family: $mainFont;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.2;
-  }
-  &__titel:nth-child(2) {
-    font-size: 35px;
-    font-family: "Raleway";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 0.686;
-    padding-bottom: 10px;
-  }
-  &__titel:nth-child(3) {
-    border: unset;
-    font-size: 14px;
-    font-family: $mainFont;
-    color: rgba(255, 255, 255, 0.502);
-    line-height: 1.714;
-  }
-  &__titel:nth-child(n + 4) {
-    border-bottom: 1px solid #f5f5f5;
-    background-color: #ffffff;
-    font-size: 14px;
-    font-family: $mainFont;
-    color: rgb(134, 135, 139);
-    text-transform: uppercase;
-    line-height: 1.714;
-  }
-  &__titel:nth-child(-n + 3) {
-    background-color: #333333;
-  }
-  &__titel.line {
-    background-color: #ff8b38;
-    height: 5px;
-    padding-top: 0;
-    padding-bottom: 0;
-    border: unset;
-  }
-  &__titel.popular {
-    background-color: #ff8b38;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: unset;
-    font-size: 14px;
-    font-family: $mainFont;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.714;
+    &:nth-child(1) {
+      font-size: 20px;
+      font-family: $mainFont;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      line-height: 1.2;
+    }
+    &:nth-child(2) {
+      font-size: 35px;
+      font-family: "Raleway";
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      line-height: 0.686;
+      padding-bottom: 10px;
+    }
+    &:nth-child(3) {
+      border: unset;
+      font-size: 14px;
+      font-family: $mainFont;
+      color: rgba(255, 255, 255, 0.502);
+      line-height: 1.714;
+    }
+    &:nth-child(n + 4) {
+      border-bottom: 1px solid #f5f5f5;
+      background-color: #ffffff;
+      font-size: 14px;
+      font-family: $mainFont;
+      color: rgb(134, 135, 139);
+      text-transform: uppercase;
+      line-height: 1.714;
+    }
+    &:nth-child(-n + 3) {
+      background-color: #333333;
+    }
+    &.line {
+      background-color: #ff8b38;
+      height: 5px;
+      padding-top: 0;
+      padding-bottom: 0;
+      border: unset;
+    }
+    &.popular {
+      background-color: #ff8b38;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border: unset;
+      font-size: 14px;
+      font-family: $mainFont;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      line-height: 1.714;
+    }
   }
 }
 .dolor {

@@ -1,6 +1,5 @@
 .contact {
   padding: 110px 0 80px 0;
-
   &__section-name {
     padding-bottom: 60px;
   }
@@ -11,76 +10,77 @@
     font-size: 14px;
     font-family: $mainFont;
     color: rgb(189, 189, 189);
-    &__hat {
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-      width: 1100px;
-      height: 160px;
-      margin-bottom: 42px;
-    }
-    &__wrap {
-      width: 520px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+  }
+  &__information {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 1100px;
+    height: 160px;
+    margin-bottom: 42px;
+  }
+  &__wrap {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__message {
+    width: 510px;
+    font-size: 14px;
+    font-family: $mainFont;
+    color: rgb(189, 189, 189);
+    padding: 10px 0 0 10px;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    resize: none;
+  }
+  &__sent {
+    padding: 16px 24px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: $mainFont;
+    line-height: 1.2;
+    cursor: pointer;
+    background-color: $orange;
+    border-radius: 6px;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    &:hover {
+      opacity: 0.8;
     }
   }
-}
-.sent__message {
-  padding: 16px 24px;
-  border: none;
-  color: #fff;
-  font-size: 15px;
-  font-family: $mainFont;
-  line-height: 1.2;
-  cursor: pointer;
-  background-color: $orange;
-  border-radius: 6px;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sent__message:hover {
-  opacity: 0.8;
-}
-.message {
-  width: 510px;
-  font-size: 14px;
-  font-family: $mainFont;
-  color: rgb(189, 189, 189);
-  padding: 10px 0 0 10px;
-  border: none;
-  border-bottom: 1px solid #d6d6d6;
-  resize: none;
-}
-@media (max-width: 1140px) {
-  .contact__form-input__hat {
+  &__form-position {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
-  }
-  .message {
-    display: block;
-    height: 150px;
   }
 }
-
-@media (max-width: 576px) {
+@media (max-width: 1140px) {
   .contact {
-    &__form-input {
-      &__hat {
-        width: 100%;
-      }
-      &__wrap {
-        width: 100%;
-      }
+    &__information {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+    &__message {
+      display: block;
+      height: 150px;
     }
   }
-  .message {
-    width: 100%;
+}
+@media (max-width: 576px) {
+  .contact {
+    &__information {
+      width: 100%;
+    }
+    &__wrap {
+      width: 100%;
+    }
+  }
+  .contact {
+    &__message {
+      width: 100%;
+    }
   }
 }
