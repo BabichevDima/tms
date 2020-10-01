@@ -19,7 +19,7 @@
   }
   &__titel:nth-child(1) {
     font-size: 20px;
-    font-family: "Open Sans";
+    font-family: $mainFont;
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
@@ -35,7 +35,7 @@
   &__titel:nth-child(3) {
     border: unset;
     font-size: 14px;
-    font-family: "Open Sans";
+    font-family: $mainFont;
     color: rgba(255, 255, 255, 0.502);
     line-height: 1.714;
   }
@@ -43,7 +43,7 @@
     border-bottom: 1px solid #f5f5f5;
     background-color: #ffffff;
     font-size: 14px;
-    font-family: "Open Sans";
+    font-family: $mainFont;
     color: rgb(134, 135, 139);
     text-transform: uppercase;
     line-height: 1.714;
@@ -64,7 +64,7 @@
     padding-bottom: 20px;
     border: unset;
     font-size: 14px;
-    font-family: "Open Sans";
+    font-family: $mainFont;
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.714;
@@ -94,7 +94,7 @@
   }
 }
 @media (max-width: 576px) {
-  .prise {
+  .price {
     &__item {
       width: 100%;
     }

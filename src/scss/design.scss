@@ -19,14 +19,15 @@
     line-height: 1.194;
     text-transform: uppercase;
     margin-bottom: 28px;
-  }
-  &__design.line:after {
-    content: "";
-    display: block;
-    width: 64px;
-    border: 1px solid rgb(255, 255, 255);
-    margin: auto;
-    margin-top: 40px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 64px;
+      border: 1px solid rgb(255, 255, 255);
+      margin: auto;
+      margin-top: 40px;
+    }
   }
 }
 .subtitel__design {

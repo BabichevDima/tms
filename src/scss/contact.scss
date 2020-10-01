@@ -4,38 +4,35 @@
   &__section-name {
     padding-bottom: 60px;
   }
-  &__form-input__hat {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 1100px;
-    height: 160px;
-    margin-bottom: 42px;
-  }
-  &__form-input__wrap {
-    width: 520px;
-  }
   &__form-input {
     border: none;
     border-bottom: 1px solid #d6d6d6;
     padding: 10px;
     font-size: 14px;
-    font-family: "Open Sans";
+    font-family: $mainFont;
     color: rgb(189, 189, 189);
-  }
-  &__form-input__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    &__hat {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 1100px;
+      height: 160px;
+      margin-bottom: 42px;
+    }
+    &__wrap {
+      width: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 }
-
 .sent__message {
   padding: 16px 24px;
   border: none;
   color: #fff;
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: $mainFont;
   line-height: 1.2;
   cursor: pointer;
   background-color: $orange;
@@ -53,7 +50,7 @@
 .message {
   width: 510px;
   font-size: 14px;
-  font-family: "Open Sans";
+  font-family: $mainFont;
   color: rgb(189, 189, 189);
   padding: 10px 0 0 10px;
   border: none;
@@ -74,11 +71,13 @@
 
 @media (max-width: 576px) {
   .contact {
-    &__form-input__hat {
-      width: 100%;
-    }
-    &__form-input__wrap {
-      width: 100%;
+    &__form-input {
+      &__hat {
+        width: 100%;
+      }
+      &__wrap {
+        width: 100%;
+      }
     }
   }
   .message {

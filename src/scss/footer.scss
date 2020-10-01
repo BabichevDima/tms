@@ -2,28 +2,27 @@
   background-color: #000000;
   padding-top: 40px;
 
-  &__item {
+  &__menu-item {
     text-align: center;
   }
-  &__link {
+  &__menu-link {
     text-decoration: none;
     margin-right: 30px;
     color: #cccccc;
     font-size: 25px;
-  }
-
-  &__link:hover {
-    color: $orange;
-    cursor: pointer;
-  }
-  &__link:last-child {
-    margin-right: 0;
+    &:hover {
+      color: $orange;
+      cursor: pointer;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 .copiright {
   text-align: center;
   font-size: 12px;
   padding: 15px 0;
-  font-family: "Open Sans";
+  font-family: $mainFont;
   color: rgba(255, 255, 255, 0.502);
 }
