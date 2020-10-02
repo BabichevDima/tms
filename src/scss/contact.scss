@@ -62,10 +62,13 @@
       flex-direction: column;
       align-items: center;
       height: auto;
+      overflow: hidden;
+      width: 100%;
     }
     &__message {
       display: block;
       height: 150px;
+      width: 510px;
     }
   }
 }
@@ -77,8 +80,11 @@
     &__wrap {
       width: 100%;
     }
-  }
-  &__message {
-    width: 100%;
+    &__message {
+      width: 100%;
+      padding: 0;
+      padding-left: 20px;
+      padding-top: 10px;
+    }
   }
 }

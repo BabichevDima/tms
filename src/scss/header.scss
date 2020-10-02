@@ -13,6 +13,7 @@
   margin: auto;
   padding: 0 16px;
   box-sizing: border-box;
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -22,6 +23,9 @@
 .header {
   background-color: #000000;
   padding: 20px 0;
+  &__toggle-menu-button{
+    display: none;
+  }
 }
 .header-menu {
   &__item {
